@@ -4,6 +4,10 @@ node_js:
   - 'stable'
   - '8'
 
+script:
+  - npm run test
+  - npm run build
+
 cache:
   directories:
   - node_modules
