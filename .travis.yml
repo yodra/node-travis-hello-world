@@ -6,8 +6,12 @@ node_js:
 
 script:
   - npm run test
-  - npm run build
 
 cache:
   directories:
     - node_modules
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "f2f36623-c5ad-454f-a5c4-3950ffff7c17"
